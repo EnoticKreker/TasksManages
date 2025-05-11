@@ -7,9 +7,8 @@ class STaskAdd(BaseModel):
     description: Optional[str] = None
 
 class STask(STaskAdd):
-    model_config = ConfigDict(from_attributes=True)
-    
     id: int
+    model_config = ConfigDict(from_attributes=True)
     
     
 class STaskId(BaseModel):
